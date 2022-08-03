@@ -12,7 +12,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       await signUp(email, password);
-      navigate("/")
+      navigate("/home")
     } catch (error) {
       console.log(error);
     }
