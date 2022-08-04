@@ -1,18 +1,28 @@
-.label{
-    position:absolute;
-    pointer-events:none;
-    color:black;
-    z-index: 50;
-    top:18px;
-    left:15px;
-    transition: all 0.3s;
-}
-
-input:focus ~ .label,
+/* input:focus ~ .label,
 input:not(:focus):valid ~ .label{
   top: 8px;
   bottom: 10px;
   left: 20px;
   font-size: 11px;
   opacity: 1;
+} */
+
+input:focus +.label,
+input:not(:focus):valid +.label{
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+
+.label{
+  position:absolute;
+  pointer-events:none;
+  color:black;
+  z-index: 50;
+  top:18px;
+  left:15px;
+  transition: all 0.3s;
 }

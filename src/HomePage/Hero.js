@@ -1,6 +1,6 @@
 import React from "react";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import styles from "./Hero.module.css"
+// import styles from "./Hero.module.css"
 
 
 const Hero = () => {
@@ -23,9 +23,9 @@ const Hero = () => {
               <div className="w-[70%] bg-black relative">
                 <input
                   className="w-full h-[60px] border-none outline-none pl-4 text-black text-[14px]"
-                  type="text"
+                  type="text" placeholder="Enter Email"
                 />
-                <div className={styles.label}><p>Email address</p></div>
+                {/* <label className={styles.label}>Email address</label> */}
               </div>
               <button
                 className="flex bg-red-700 items-center justify-center w-[30%] text-white text-2xl"
